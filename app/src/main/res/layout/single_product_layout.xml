@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/white_layer"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/backclick"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="left|center_vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@mipmap/backicongray"/>
+                </LinearLayout>
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/titleText"
+                    android:text="Product Detail"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:descendantFocusability="blocksDescendants">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+                            <TextView android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/titleText"
+                                android:id="@+id/sname"/>
+                            <FrameLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="250dp"
+                                android:background="#ffffff"
+                                android:orientation="vertical" >
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="220dp"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:background="#ffffff"
+                                    android:gravity="center|center_vertical" >
+                                    <co.stutzen.shopzen.custom.CustomGallery
+                                        android:id="@+id/gallery"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="220dp"
+                                        android:layout_gravity="center|center_vertical"
+                                        android:spacing="5dp" />
+                                </LinearLayout>
+                                <FrameLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="270dp" >
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical" >
+                                        <FrameLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="220dp" >
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="bottom|center_vertical"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_marginLeft="16dp"
+                                                android:layout_marginRight="16dp"
+                                                android:gravity="center|center_vertical" >
+                                                <TextView
+                                                    android:id="@+id/addcart"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="35dp"
+                                                    android:background="@drawable/greenrounded_bg"
+                                                    android:gravity="center|center_vertical"
+                                                    android:text="Add To Cart"
+                                                    android:textColor="#ffffff"
+                                                    android:textSize="14dp" />
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom|center_vertical"
+                                            android:layout_marginBottom="16dp"
+                                            android:layout_marginLeft="16dp"
+                                            android:layout_marginRight="16dp"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/highlightlay"
+                                            android:layout_marginTop="25dp"
+                                            android:gravity="center|center_vertical" >
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </FrameLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="16dp"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Price:"
+                                    android:textColor="#000000"
+                                    android:textSize="14dp" />
+                                <TextView
+                                    android:id="@+id/sprice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:gravity="center"
+                                    android:text="$234"
+                                    android:textColor="#686868"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                            <FrameLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="12dp" >
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+                                    <co.stutzen.shopzen.custom.MaterialRippleLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        app:mrl_rippleAlpha="0.2"
+                                        app:mrl_rippleColor="#585858"
+                                        app:mrl_rippleDelayClick="false"
+                                        app:mrl_rippleHover="true"
+                                        app:mrl_rippleOverlay="true" >
+                                        <Spinner
+                                            android:id="@+id/sizespinner"
+                                            android:layout_width="150dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:background="@drawable/change_spinnerbg"
+                                            android:divider="@null"
+                                            android:dividerHeight="0dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingRight="0dp"
+                                            android:popupBackground="@drawable/spinnershad" />
+                                    </co.stutzen.shopzen.custom.MaterialRippleLayout>
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="right|center_vertical"
+                                        android:gravity="right|center_vertical" >
+                                        <TextView
+                                            android:id="@+id/color"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="16dp"
+                                            android:background="@drawable/round_circle"
+                                            android:gravity="center|center_vertical"
+                                            android:singleLine="true"
+                                            android:textColor="#000000"
+                                            android:textSize="13dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </FrameLayout>
+                            <LinearLayout
+                                android:id="@+id/colorlay"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="16dp"
+                                android:visibility="gone">
+                                <co.stutzen.shopzen.custom.ExpandableHeightGridView
+                                    android:id="@+id/colorgrid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:columnWidth="30dp"
+                                    android:verticalSpacing="16dp"
+                                    android:listSelector="@android:color/transparent"
+                                    android:stretchMode="columnWidth" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="#EDEDED" />
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="16dp"
+                            android:background="#f3f3f3" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#ededed" />
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1" >
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:id="@+id/info"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/bgcolor"
+                                        android:gravity="center|center_vertical"
+                                        android:text="INFO"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                    <View
+                                        android:id="@+id/infovw"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="@color/colorAccent" />
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#ededed" />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:id="@+id/deliver"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/bgcolor"
+                                        android:gravity="center|center_vertical"
+                                        android:text="DELIVERY"
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+                                    <View
+                                        android:id="@+id/delivervw"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:background="#ededed" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:orientation="vertical" >
+                            <LinearLayout
+                                android:id="@+id/infolayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="#ffffff"
+                                android:orientation="vertical" >
+                                <TextView
+                                    android:id="@+id/description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#ffffff"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#000000"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/delivlayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="#ffffff"
+                                android:orientation="vertical"
+                                android:visibility="gone" >
+                                <TextView
+                                    android:id="@+id/delivdesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#ffffff"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#000000"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/addcart1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/colorAccent"
+                                android:gravity="center|center_vertical"
+                                android:singleLine="true"
+                                android:text="ADD TO CART"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:visibility="gone"
+                            android:text="Also in this Category"
+                            android:textColor="#a0a0a0"
+                            android:textSize="14dp" />
+                        <co.stutzen.shopzen.custom.ExpandableHeightGridView
+                            android:id="@+id/gridvw"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:horizontalSpacing="16dp"
+                            android:listSelector="@android:color/transparent"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/colorframe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ffffff"
+            android:visibility="gone" >
+            <RelativeLayout
+                android:id="@+id/colorlinear"
+                android:layout_width="72dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:background="#ffffff" >
+                <ListView
+                    android:id="@+id/colorlist"
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:divider="@null"
+                    android:dividerHeight="16dp"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+            </RelativeLayout>
+        </FrameLayout>
+</LinearLayout>
+</LinearLayout>

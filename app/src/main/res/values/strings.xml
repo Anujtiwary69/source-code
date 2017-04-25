@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shopzen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="groom_product">Grooming Products</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="fb_id">1679062862391584</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

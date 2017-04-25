@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@mipmap/caregories"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@mipmap/wallet"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@mipmap/viewhostiory"
+            android:title="View History" />
+        <item
+            android:id="@+id/nav_referearn"
+            android:icon="@mipmap/referearn"
+            android:title="Refer &amp; Earn" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@mipmap/rate"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/helpcenter"
+                android:title="Help Centre" />
+        </menu>
+    </item>
+
+</menu>
